@@ -1,0 +1,47 @@
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\Master Investor\bin\Debug\net6.0-windows\Master Investor.exe
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\Master Investor\bin\Debug\net6.0-windows\Master Investor.deps.json
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\Master Investor\bin\Debug\net6.0-windows\Master Investor.runtimeconfig.json
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\Master Investor\bin\Debug\net6.0-windows\Master Investor.dll
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\Master Investor\bin\Debug\net6.0-windows\Master Investor.pdb
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\Master Investor\obj\Debug\net6.0-windows\Master Investor.csproj.AssemblyReference.cache
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\Master Investor\obj\Debug\net6.0-windows\Master_Investor.Form1.resources
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\Master Investor\obj\Debug\net6.0-windows\Master Investor.csproj.GenerateResource.cache
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\Master Investor\obj\Debug\net6.0-windows\Master Investor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\Master Investor\obj\Debug\net6.0-windows\Master Investor.AssemblyInfoInputs.cache
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\Master Investor\obj\Debug\net6.0-windows\Master Investor.AssemblyInfo.cs
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\Master Investor\obj\Debug\net6.0-windows\Master Investor.csproj.CoreCompileInputs.cache
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\Master Investor\obj\Debug\net6.0-windows\Master Investor.dll
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\Master Investor\obj\Debug\net6.0-windows\refint\Master Investor.dll
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\Master Investor\obj\Debug\net6.0-windows\Master Investor.pdb
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\Master Investor\obj\Debug\net6.0-windows\Master Investor.genruntimeconfig.cache
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\Master Investor\obj\Debug\net6.0-windows\ref\Master Investor.dll
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\bin\Debug\net6.0-windows\Master Investor.exe
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\bin\Debug\net6.0-windows\Master Investor.deps.json
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\bin\Debug\net6.0-windows\Master Investor.runtimeconfig.json
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\bin\Debug\net6.0-windows\Master Investor.dll
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\bin\Debug\net6.0-windows\Master Investor.pdb
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\obj\Debug\net6.0-windows\Master Investor.csproj.AssemblyReference.cache
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\obj\Debug\net6.0-windows\Master_Investor.Form1.resources
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\obj\Debug\net6.0-windows\Master Investor.csproj.GenerateResource.cache
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\obj\Debug\net6.0-windows\Master Investor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\obj\Debug\net6.0-windows\Master Investor.AssemblyInfoInputs.cache
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\obj\Debug\net6.0-windows\Master Investor.AssemblyInfo.cs
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\obj\Debug\net6.0-windows\Master Investor.csproj.CoreCompileInputs.cache
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\obj\Debug\net6.0-windows\Master Investor.dll
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\obj\Debug\net6.0-windows\refint\Master Investor.dll
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\obj\Debug\net6.0-windows\Master Investor.pdb
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\obj\Debug\net6.0-windows\Master Investor.genruntimeconfig.cache
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\obj\Debug\net6.0-windows\ref\Master Investor.dll
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\bin\Debug\net6.0-windows\Master Investor.dll.config
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\bin\Debug\net6.0-windows\Aqua.dll
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\bin\Debug\net6.0-windows\Aqua.Newtonsoft.Json.dll
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\bin\Debug\net6.0-windows\Remote.Linq.dll
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\bin\Debug\net6.0-windows\Remote.Linq.Newtonsoft.Json.dll
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\bin\Debug\net6.0-windows\System.Net.Http.WebRequest.dll
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\bin\Debug\net6.0-windows\System.Net.Http.Extensions.dll
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\bin\Debug\net6.0-windows\System.Net.Http.Formatting.dll
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\bin\Debug\net6.0-windows\System.Net.Http.Primitives.dll
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\obj\Debug\net6.0-windows\Master Investor.csproj.CopyComplete
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\obj\Debug\net6.0-windows\Master_Investor.Properties.Resources.resources
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\obj\Debug\net6.0-windows\Master_Investor.about.resources
