@@ -7,7 +7,7 @@ Before opening first coin, please defined the browser you want to use with apps.
 ## Prerequisite
 Theses packages needs to be installed to use this apps:
 
- - .Net 6 minimum
+ - .Net 6.0.12 minimum
 
 ## How to use it
 
