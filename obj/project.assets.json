@@ -1943,23 +1943,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gilles\\.nuget\\packages\\": {},
+    "C:\\Users\\kaelin\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gilles\\Documents\\Visual Studio 2022\\Project\\master-investor\\Master Investor.csproj",
+      "projectUniqueName": "C:\\Users\\kaelin\\Documents\\Visual Studio 2022\\Projects\\Master-Investor\\Master Investor.csproj",
       "projectName": "Master Investor",
-      "projectPath": "C:\\Users\\gilles\\Documents\\Visual Studio 2022\\Project\\master-investor\\Master Investor.csproj",
-      "packagesPath": "C:\\Users\\gilles\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gilles\\Documents\\Visual Studio 2022\\Project\\master-investor\\obj\\",
+      "projectPath": "C:\\Users\\kaelin\\Documents\\Visual Studio 2022\\Projects\\Master-Investor\\Master Investor.csproj",
+      "packagesPath": "C:\\Users\\kaelin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\kaelin\\Documents\\Visual Studio 2022\\Projects\\Master-Investor\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\gilles\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kaelin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

@@ -93,6 +93,13 @@ namespace Master_Investor
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            //Check if settings are correctly defined
+            if(Properties.Settings.Default.browserLocation is null)
+            {
+                Properties.Settings.Default.browserLocation = "";
+                Properties.Settings.Default.Save();
+            }
+
             //Initialise the timer for refresh interval
             timRefreshMarket.Interval = 10000;
         }
@@ -114,11 +121,17 @@ namespace Master_Investor
         private void dgvAnalyseMarche_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             int ligne = e.RowIndex;
-            string emplacementFirefox = Properties.Settings.Default.browserLocation;
+            string emplacementBrowser = Properties.Settings.Default.browserLocation;
 
             //Open trading page on webbrowser
-            System.Diagnostics.Process.Start(emplacementFirefox, "https://www.kucoin.com/trade/" + dgvAnalyseMarche.Rows[ligne].Cells[0].Value.ToString() +"?spm=kcWeb.B1homepage.Header4.1");
-
+            if (emplacementBrowser != "")
+            {
+                System.Diagnostics.Process.Start(emplacementBrowser, "https://www.kucoin.com/trade/" + dgvAnalyseMarche.Rows[ligne].Cells[0].Value.ToString() + "?spm=kcWeb.B1homepage.Header4.1");
+            }
+            else
+            {
+                MessageBox.Show("Please specify the webbroser you want to use by going to File > Specify webbrowser location...");
+            }
         }
 
         private void btnAutoRefreshMarket_Click(object sender, EventArgs e)
@@ -150,27 +163,19 @@ namespace Master_Investor
 
         private void définirLemplacementDuNavigateurToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //Check if browser setted
-            if(Properties.Settings.Default.browserLocation != "")
-            {
-                //Open window to choose path to browser
-                OpenFileDialog openFileDialog1 = new OpenFileDialog();
+            //Open window to choose path to browser
+            OpenFileDialog openFileDialog1 = new OpenFileDialog();
 
-                openFileDialog1.InitialDirectory = @"C:\";
-                openFileDialog1.Filter = "exe files (*.exe)|*.exe";
+            openFileDialog1.InitialDirectory = @"C:\";
+            openFileDialog1.Filter = "exe files (*.exe)|*.exe";
 
-                openFileDialog1.ShowDialog();
+            openFileDialog1.ShowDialog();
 
-                //Sauvegarde l'emplacement
-                Properties.Settings.Default.browserLocation = openFileDialog1.FileName;
-                Properties.Settings.Default.Save();
+            //Sauvegarde l'emplacement
+            Properties.Settings.Default.browserLocation = openFileDialog1.FileName;
+            Properties.Settings.Default.Save();
 
-                MessageBox.Show("Chemin d'accès au navigateur modifié avec succès");
-            }
-            else
-            {
-                MessageBox.Show("Please provide the path to your prefered browser in the file menu");
-            }
+            MessageBox.Show("Path to webbrowser defined");
             
         }
 

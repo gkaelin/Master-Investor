@@ -34,6 +34,8 @@
             this.fichierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.définirLemplacementDuNavigateurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quitterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.grpbAnalyseMarche = new System.Windows.Forms.GroupBox();
             this.dgvAnalyseMarche = new System.Windows.Forms.DataGridView();
             this.symbol = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,8 +48,6 @@
             this.btnRefreshMarket = new System.Windows.Forms.Button();
             this.timRefreshMarket = new System.Windows.Forms.Timer(this.components);
             this.pctbMonney = new System.Windows.Forms.PictureBox();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.grpbAnalyseMarche.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAnalyseMarche)).BeginInit();
@@ -78,16 +78,31 @@
             // définirLemplacementDuNavigateurToolStripMenuItem
             // 
             this.définirLemplacementDuNavigateurToolStripMenuItem.Name = "définirLemplacementDuNavigateurToolStripMenuItem";
-            this.définirLemplacementDuNavigateurToolStripMenuItem.Size = new System.Drawing.Size(276, 22);
-            this.définirLemplacementDuNavigateurToolStripMenuItem.Text = "Définir l\'emplacement du navigateur...";
+            this.définirLemplacementDuNavigateurToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
+            this.définirLemplacementDuNavigateurToolStripMenuItem.Text = "Specify webbrowser location...";
             this.définirLemplacementDuNavigateurToolStripMenuItem.Click += new System.EventHandler(this.définirLemplacementDuNavigateurToolStripMenuItem_Click);
             // 
             // quitterToolStripMenuItem
             // 
             this.quitterToolStripMenuItem.Name = "quitterToolStripMenuItem";
-            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(276, 22);
-            this.quitterToolStripMenuItem.Text = "Quitter";
+            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
+            this.quitterToolStripMenuItem.Text = "Quit";
             this.quitterToolStripMenuItem.Click += new System.EventHandler(this.quitterToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutToolStripMenuItem});
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(24, 20);
+            this.toolStripMenuItem1.Text = "?";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
+            this.aboutToolStripMenuItem.Text = "About...";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // grpbAnalyseMarche
             // 
@@ -192,21 +207,6 @@
             this.pctbMonney.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pctbMonney.TabIndex = 13;
             this.pctbMonney.TabStop = false;
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutToolStripMenuItem});
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(24, 20);
-            this.toolStripMenuItem1.Text = "?";
-            // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.aboutToolStripMenuItem.Text = "About...";
-            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // Form1
             // 
