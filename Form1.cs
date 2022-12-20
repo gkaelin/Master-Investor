@@ -114,6 +114,8 @@ namespace Master_Investor
                     }
 
                     dgvAnalyseMarche.Rows.Add(symbole, lastPrice, changeRate, changePriceSinceLastUpdate, changeRateSinceLastUpdate);
+
+                    firstRun = false;
                 }
             }
 
@@ -141,8 +143,6 @@ namespace Master_Investor
                 dgvSaved.Rows[j].Cells[3].Value = dgvAnalyseMarche.Rows[j].Cells[3].Value;
                 dgvSaved.Rows[j].Cells[4].Value = dgvAnalyseMarche.Rows[j].Cells[4].Value;
             }
-
-            firstRun = false;
         }
 
         private void quitterToolStripMenuItem_Click(object sender, EventArgs e)
