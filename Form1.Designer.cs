@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fichierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.définirLemplacementDuNavigateurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quitterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,6 +47,8 @@
             this.btnRefreshMarket = new System.Windows.Forms.Button();
             this.timRefreshMarket = new System.Windows.Forms.Timer(this.components);
             this.pctbMonney = new System.Windows.Forms.PictureBox();
+            this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.menuStrip1.SuspendLayout();
             this.grpbAnalyseMarche.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAnalyseMarche)).BeginInit();
@@ -69,23 +70,17 @@
             // fichierToolStripMenuItem
             // 
             this.fichierToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.définirLemplacementDuNavigateurToolStripMenuItem,
+            this.settingsToolStripMenuItem,
+            this.toolStripSeparator1,
             this.quitterToolStripMenuItem});
             this.fichierToolStripMenuItem.Name = "fichierToolStripMenuItem";
             this.fichierToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.fichierToolStripMenuItem.Text = "Fichier";
             // 
-            // définirLemplacementDuNavigateurToolStripMenuItem
-            // 
-            this.définirLemplacementDuNavigateurToolStripMenuItem.Name = "définirLemplacementDuNavigateurToolStripMenuItem";
-            this.définirLemplacementDuNavigateurToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
-            this.définirLemplacementDuNavigateurToolStripMenuItem.Text = "Specify webbrowser location...";
-            this.définirLemplacementDuNavigateurToolStripMenuItem.Click += new System.EventHandler(this.définirLemplacementDuNavigateurToolStripMenuItem_Click);
-            // 
             // quitterToolStripMenuItem
             // 
             this.quitterToolStripMenuItem.Name = "quitterToolStripMenuItem";
-            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
+            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.quitterToolStripMenuItem.Text = "Quit";
             this.quitterToolStripMenuItem.Click += new System.EventHandler(this.quitterToolStripMenuItem_Click);
             // 
@@ -208,6 +203,18 @@
             this.pctbMonney.TabIndex = 13;
             this.pctbMonney.TabStop = false;
             // 
+            // settingsToolStripMenuItem
+            // 
+            this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.settingsToolStripMenuItem.Text = "Settings...";
+            this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -249,9 +256,10 @@
         private Button btnRefreshMarket;
         private Button btnAutoRefreshMarket;
         private System.Windows.Forms.Timer timRefreshMarket;
-        private ToolStripMenuItem définirLemplacementDuNavigateurToolStripMenuItem;
         private PictureBox pctbMonney;
         private ToolStripMenuItem toolStripMenuItem1;
         private ToolStripMenuItem aboutToolStripMenuItem;
+        private ToolStripMenuItem settingsToolStripMenuItem;
+        private ToolStripSeparator toolStripSeparator1;
     }
 }

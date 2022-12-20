@@ -34,5 +34,125 @@ namespace Master_Investor.Properties {
                 this["browserLocation"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool USDTPairesEnabled {
+            get {
+                return ((bool)(this["USDTPairesEnabled"]));
+            }
+            set {
+                this["USDTPairesEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool BTCPairesEnabled {
+            get {
+                return ((bool)(this["BTCPairesEnabled"]));
+            }
+            set {
+                this["BTCPairesEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("10")]
+        public int timeForTimer {
+            get {
+                return ((int)(this["timeForTimer"]));
+            }
+            set {
+                this["timeForTimer"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool TUSDPairesEnabled {
+            get {
+                return ((bool)(this["TUSDPairesEnabled"]));
+            }
+            set {
+                this["TUSDPairesEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool DAIPairesEnabled {
+            get {
+                return ((bool)(this["DAIPairesEnabled"]));
+            }
+            set {
+                this["DAIPairesEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool USDCPairesEnabled {
+            get {
+                return ((bool)(this["USDCPairesEnabled"]));
+            }
+            set {
+                this["USDCPairesEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool KCSPAiresEnabled {
+            get {
+                return ((bool)(this["KCSPAiresEnabled"]));
+            }
+            set {
+                this["KCSPAiresEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool ETHPairesEnabled {
+            get {
+                return ((bool)(this["ETHPairesEnabled"]));
+            }
+            set {
+                this["ETHPairesEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool TRXPairesEnabled {
+            get {
+                return ((bool)(this["TRXPairesEnabled"]));
+            }
+            set {
+                this["TRXPairesEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool DOGEPairesEnabled {
+            get {
+                return ((bool)(this["DOGEPairesEnabled"]));
+            }
+            set {
+                this["DOGEPairesEnabled"] = value;
+            }
+        }
     }
 }

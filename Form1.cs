@@ -19,6 +19,16 @@ namespace Master_Investor
 
         private void refreshMarketData()
         {
+            bool usdtEnable = Properties.Settings.Default.USDTPairesEnabled;
+            bool btcEnable = Properties.Settings.Default.BTCPairesEnabled;
+            bool tusdEnable = Properties.Settings.Default.TUSDPairesEnabled;
+            bool daiEnable = Properties.Settings.Default.DAIPairesEnabled;
+            bool usdcEnable = Properties.Settings.Default.USDCPairesEnabled;
+            bool kcsEnable = Properties.Settings.Default.KCSPAiresEnabled;
+            bool ethEnable = Properties.Settings.Default.ETHPairesEnabled;
+            bool trxEnable = Properties.Settings.Default.TRXPairesEnabled;
+            bool dogeEnable = Properties.Settings.Default.DOGEPairesEnabled;
+
             dgvAnalyseMarche.Rows.Clear();
 
             kuCoinAPI kuCoinAPIOBJ = new kuCoinAPI();
@@ -30,8 +40,49 @@ namespace Master_Investor
 
             foreach (var ligneJSON in JsonData)
             {
-                if (ligneJSON["symbol"].ToString().Contains("-USDT"))
+                bool process = false;
+
+                //Check if current USDT pair, and USDT pair are enabled
+                if(usdtEnable == true && ligneJSON["symbol"].ToString().Contains("-USDT"))
                 {
+                    process = true;
+                }
+                if (btcEnable == true && ligneJSON["symbol"].ToString().Contains("-BTC"))
+                {
+                    process = true;
+                }
+                if (tusdEnable == true && ligneJSON["symbol"].ToString().Contains("-TUSD"))
+                {
+                    process = true;
+                }
+                if (daiEnable == true && ligneJSON["symbol"].ToString().Contains("-DAI"))
+                {
+                    process = true;
+                }
+                if (usdcEnable == true && ligneJSON["symbol"].ToString().Contains("-USDC"))
+                {
+                    process = true;
+                }
+                if (kcsEnable == true && ligneJSON["symbol"].ToString().Contains("-KCS"))
+                {
+                    process = true;
+                }
+                if (ethEnable == true && ligneJSON["symbol"].ToString().Contains("-ETH"))
+                {
+                    process = true;
+                }
+                if (trxEnable == true && ligneJSON["symbol"].ToString().Contains("-TRX"))
+                {
+                    process = true;
+                }
+                if (dogeEnable == true && ligneJSON["symbol"].ToString().Contains("-DOGE"))
+                {
+                    process = true;
+                }
+
+                if (process == true)
+                {
+
                     //USDT market, add it to datagrid
                     NumberFormatInfo provider = new NumberFormatInfo();
                     provider.NumberDecimalSeparator = ".";
@@ -101,7 +152,7 @@ namespace Master_Investor
             }
 
             //Initialise the timer for refresh interval
-            timRefreshMarket.Interval = 10000;
+            timRefreshMarket.Interval = Properties.Settings.Default.timeForTimer * 1000;
         }
 
         private void btnRefreshMarket_Click(object sender, EventArgs e)
@@ -115,6 +166,9 @@ namespace Master_Investor
             if (autoRefreshAReactiver == true)
             {
                 timRefreshMarket.Enabled = true;
+                
+                //Set interval if it had been setted in settings before
+                timRefreshMarket.Interval = Properties.Settings.Default.timeForTimer * 1000;
             }
         }
 
@@ -148,6 +202,7 @@ namespace Master_Investor
             {
                 //Timer stopped
                 timRefreshMarket.Enabled = true;
+                timRefreshMarket.Interval = Properties.Settings.Default.timeForTimer * 1000;
                 btnAutoRefreshMarket.Text = "Auto refresh on";
                 btnAutoRefreshMarket.ForeColor = Color.Green;
             }
@@ -159,30 +214,25 @@ namespace Master_Investor
             btnRefreshMarket.Enabled = false;
 
             refreshMarketData();
-        }
 
-        private void définirLemplacementDuNavigateurToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //Open window to choose path to browser
-            OpenFileDialog openFileDialog1 = new OpenFileDialog();
+            btnAutoRefreshMarket.Enabled = true;
+            btnRefreshMarket.Enabled = true;
 
-            openFileDialog1.InitialDirectory = @"C:\";
-            openFileDialog1.Filter = "exe files (*.exe)|*.exe";
-
-            openFileDialog1.ShowDialog();
-
-            //Sauvegarde l'emplacement
-            Properties.Settings.Default.browserLocation = openFileDialog1.FileName;
-            Properties.Settings.Default.Save();
-
-            MessageBox.Show("Path to webbrowser defined");
-            
+            //Reset time interval
+            timRefreshMarket.Interval = Properties.Settings.Default.timeForTimer * 1000;
         }
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             about aboutOBJ = new about();
             aboutOBJ.Show();
+        }
+
+        private void settingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Display settings
+            settings settingsOBJ = new settings();
+            settingsOBJ.Show();
         }
     }
 }

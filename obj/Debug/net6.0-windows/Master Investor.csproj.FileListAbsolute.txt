@@ -75,3 +75,4 @@ C:\Users\kaelin\Documents\Visual Studio 2022\Projects\Master-Investor\obj\Debug\
 C:\Users\kaelin\Documents\Visual Studio 2022\Projects\Master-Investor\obj\Debug\net6.0-windows\Master Investor.pdb
 C:\Users\kaelin\Documents\Visual Studio 2022\Projects\Master-Investor\obj\Debug\net6.0-windows\Master Investor.genruntimeconfig.cache
 C:\Users\kaelin\Documents\Visual Studio 2022\Projects\Master-Investor\obj\Debug\net6.0-windows\ref\Master Investor.dll
+C:\Users\gilles\Documents\Visual Studio 2022\Project\master-investor\obj\Debug\net6.0-windows\Master_Investor.settings.resources
