@@ -88,11 +88,12 @@ namespace Master_Investor
                     provider.NumberDecimalSeparator = ".";
 
                     string symbole = ligneJSON["symbol"].ToString();
-                    string lastPrice = ligneJSON["last"].ToString();
+                    double lastPrice = Convert.ToDouble(ligneJSON["last"].ToString(), provider);
 
                     double changeRate = Convert.ToDouble(ligneJSON["changeRate"].ToString(), provider) * 100;
 
                     double changeRateSinceLastUpdate = 0;
+                    double changePriceSinceLastUpdate = 0;
 
                     if (firstRun == false)
                     {
@@ -101,19 +102,25 @@ namespace Master_Investor
                         {
                             if (ligne.Cells[0].Value != null && ligne.Cells[0].Value.ToString() == ligneJSON["symbol"].ToString())
                             {
-                                //Calcul difference
+                                //Calcul difference rate
                                 changeRateSinceLastUpdate = changeRate - Convert.ToDouble(ligne.Cells[2].Value.ToString());
+
+                                //Calcule difference price
+                                changePriceSinceLastUpdate = lastPrice - Convert.ToDouble(ligne.Cells[1].Value.ToString());
+
+                                break;
                             }
                         }
                     }
 
-                    dgvAnalyseMarche.Rows.Add(symbole, lastPrice, changeRate, changeRateSinceLastUpdate);
+                    dgvAnalyseMarche.Rows.Add(symbole, lastPrice, changeRate, changePriceSinceLastUpdate, changeRateSinceLastUpdate);
                 }
             }
 
             //Order the dataGrid by changeRate changed
             dgvAnalyseMarche.Columns["h24Rate"].ValueType = typeof(decimal);
             dgvAnalyseMarche.Columns["changeRate"].ValueType = typeof(decimal);
+            dgvAnalyseMarche.Columns["priceChange"].ValueType = typeof(decimal);
             dgvAnalyseMarche.Sort(dgvAnalyseMarche.Columns["changeRate"], ListSortDirection.Descending);
 
             //Save datagrid to use it later
@@ -132,6 +139,7 @@ namespace Master_Investor
                 dgvSaved.Rows[j].Cells[1].Value = dgvAnalyseMarche.Rows[j].Cells[1].Value;
                 dgvSaved.Rows[j].Cells[2].Value = dgvAnalyseMarche.Rows[j].Cells[2].Value;
                 dgvSaved.Rows[j].Cells[3].Value = dgvAnalyseMarche.Rows[j].Cells[3].Value;
+                dgvSaved.Rows[j].Cells[4].Value = dgvAnalyseMarche.Rows[j].Cells[4].Value;
             }
 
             firstRun = false;
