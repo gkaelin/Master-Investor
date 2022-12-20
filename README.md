@@ -9,6 +9,11 @@ Theses packages needs to be installed to use this apps:
 
  - .Net 6.0.12 minimum
 
+## Warning
+This app is intended for market analyse, it doesn't show signals.
+I'm not responsible if yu lose monney or not make profit.
+You are the only one reponsible of your investments !
+
 ## How to use it
 
  1. Refresh data by clicking on "Refresh now"
