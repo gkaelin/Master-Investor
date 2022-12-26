@@ -89,11 +89,13 @@ namespace Master_Investor
 
                     string symbole = ligneJSON["symbol"].ToString();
                     double lastPrice = Convert.ToDouble(ligneJSON["last"].ToString(), provider);
+                    double massMarket = Convert.ToDouble(ligneJSON["vol"].ToString(), provider);
 
                     double changeRate = Convert.ToDouble(ligneJSON["changeRate"].ToString(), provider) * 100;
 
                     double changeRateSinceLastUpdate = 0;
                     double changePriceSinceLastUpdate = 0;
+                    double changeMassMarketSinceLastUpdate = 0;
 
                     if (firstRun == false)
                     {
@@ -105,15 +107,18 @@ namespace Master_Investor
                                 //Calcul difference rate
                                 changeRateSinceLastUpdate = changeRate - Convert.ToDouble(ligne.Cells[2].Value.ToString());
 
-                                //Calcule difference price
+                                //Calcul difference price
                                 changePriceSinceLastUpdate = lastPrice - Convert.ToDouble(ligne.Cells[1].Value.ToString());
+
+                                //Calcul difference mass market
+                                changeMassMarketSinceLastUpdate = massMarket - Convert.ToDouble(ligne.Cells[3].Value.ToString());
 
                                 break;
                             }
                         }
                     }
 
-                    dgvAnalyseMarche.Rows.Add(symbole, lastPrice, changeRate, changePriceSinceLastUpdate, changeRateSinceLastUpdate);
+                    dgvAnalyseMarche.Rows.Add(symbole, lastPrice, changeRate, massMarket, changePriceSinceLastUpdate, changeRateSinceLastUpdate, changeMassMarketSinceLastUpdate);
 
                     firstRun = false;
                 }
@@ -142,6 +147,7 @@ namespace Master_Investor
                 dgvSaved.Rows[j].Cells[2].Value = dgvAnalyseMarche.Rows[j].Cells[2].Value;
                 dgvSaved.Rows[j].Cells[3].Value = dgvAnalyseMarche.Rows[j].Cells[3].Value;
                 dgvSaved.Rows[j].Cells[4].Value = dgvAnalyseMarche.Rows[j].Cells[4].Value;
+                dgvSaved.Rows[j].Cells[5].Value = dgvAnalyseMarche.Rows[j].Cells[5].Value;
             }
         }
 
