@@ -17,11 +17,8 @@ You are the only one reponsible of your investments !
 
 ## How to use it
 
- 1. Refresh data by clicking on "Refresh now"
- 2. You can also refresh every 10 secondes (by default) data by clicking on "Auto refresh off"
- 3. Double-clic on a ligne in the table to open automatically the spot trading on KuCoin website
-     Don't forget to connect to your account and type your trading password to place order quickly
- 5. Repeat operations  
+Please consult the wiki in this repos for utilisation purpose.
+
 ## Contributing
 If you want to add some features, please feel free to open an issue, or do a pull request.
 
