@@ -22,3 +22,7 @@ Please consult the wiki in this repos for utilisation purpose.
 ## Contributing
 If you want to add some features, please feel free to open an issue, or do a pull request.
 
+## Donate
+If you like this app, please consider to donate to my ethereum address (BNB on BSC is also possible)
+
+**Address:** 0xFB01115eD3737560E1354487EC00a4dC4de94826
